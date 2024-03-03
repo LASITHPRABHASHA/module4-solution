@@ -1,0 +1,17 @@
+// Assuming you have an array of names
+var names = ["John", "Jane", "Bob", "Alice"];
+
+// Loop through each name in the array
+for (var i = 0; i < names.length; i++) {
+  // Get the current name
+  var currentName = names[i];
+
+  // Check if the name starts with a letter 'j' or 'J'
+  if (currentName.charAt(0).toLowerCase() === 'j') {
+    // If it starts with 'j' or 'J', print "Goodbye JSomeName"
+    byeSpeaker.speak(currentName);
+  } else {
+    // If it starts with any other letter, print "Hello SomeName"
+    helloSpeaker.speak(currentName);
+  }
+}
